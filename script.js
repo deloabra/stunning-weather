@@ -79,7 +79,7 @@ function setForecast(input){
         $("#main-jumbo").html(`
 
             <h1 class="display-8">${response.city.name} (${moment().format("l")})
-            <img src="http://openweathermap.org/img/w/${response.list[0].weather[0].icon}.png" alt="${response.list[0].weather[0].description}"></h1>
+            <img src="https://openweathermap.org/img/w/${response.list[0].weather[0].icon}.png" alt="${response.list[0].weather[0].description}"></h1>
             <p>Temperature: ${fahren} °F</p>
             <p>Humidity: ${response.list[0].main.humidity}%</p>
             <p>Wind Speed: ${response.list[0].wind.speed} MPH</p>
@@ -99,7 +99,7 @@ function setForecast(input){
             $tempCard.html(`
             
                 <h5 style="color: white;">${moment().add((cardIndex + 1), 'days').format('l')}</h5>
-                <p><img src="http://openweathermap.org/img/w/${response.list[i].weather[0].icon}.png" alt=
+                <p><img src="https://openweathermap.org/img/w/${response.list[i].weather[0].icon}.png" alt=
                 ${response.list[i].weather[0].description}"></p>
                 <p class="forecast-card">Temperature: ${fahren} °F</p>
                 <p class="forecast-card">Humidity: ${response.list[i].main.humidity}%</p>
