@@ -141,6 +141,24 @@ function errorResponse(input){
     //reset the history buttons
     setHistoryButtons();
 
+    //put an error message in the main jumbotron
+    $("#main-jumbo").html(`
+    
+        <h1 class="display-8">The city you searched did not give a result. Correct your search and try again.</h1>
+    
+    `);
+
+    $("#forecast-title").html(``);
+
+    //empty the forecast cards
+    for(var cardIndex = 0; cardIndex < 5; cardIndex++){
+        var $tempCard = $($("#forecast").children()[cardIndex]);
+
+        //set html
+        $tempCard.html(``);
+    }
+
+
 }
 
 function searchHandler(){
