@@ -6,4 +6,4 @@ stunning-weather is a web page that uses the Openweathermap api to show a foreca
 
 ### Screenshot of web page
 
-![screenshot of stunning weather](assets/screenshot.png)
+![screenshot of stunning weather](screenshot1.png)
