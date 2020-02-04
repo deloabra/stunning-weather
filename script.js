@@ -1,4 +1,4 @@
-var url1 = "http://api.openweathermap.org/data/2.5/forecast?q=";
+var url1 = "https://api.openweathermap.org/data/2.5/forecast?q=";
 var url2 = "&APPID=ad8a0b856d591a7eb8795aaac18d08bc";
 
 
@@ -69,7 +69,7 @@ function setForecast(input){
         var lat = parseInt(response.city.coord.lat).toFixed(2);
         var lon = parseInt(response.city.coord.lon).toFixed(2);
 
-        var uviUrl = "http://api.openweathermap.org/data/2.5/uvi?APPID=ad8a0b856d591a7eb8795aaac18d08bc&lat=" + lat + "&lon=" + lon;
+        var uviUrl = "https://api.openweathermap.org/data/2.5/uvi?APPID=ad8a0b856d591a7eb8795aaac18d08bc&lat=" + lat + "&lon=" + lon;
 
         //calculate fahrenheit from kelvin
         var fahren = (parseInt(response.list[0].main.temp) - 273.15) * (9/5) + 32;
