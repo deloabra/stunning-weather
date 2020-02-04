@@ -4,7 +4,7 @@ var url2 = "&APPID=ad8a0b856d591a7eb8795aaac18d08bc";
 
 init();
 
-//initialize website
+//initialize website by applying history if it exists
 function init(){
     setHistoryButtons();
 
